@@ -1,6 +1,16 @@
-/*
- * Główny plik dla stylów.
- * Wszystkie partials podłączamy tutaj.
- */
+/* 
+=====================================
+=====================================
+            IMPORT SASS
+=====================================
+=====================================
+*/
 
-// Style dla pliku z przykładem HTML fragmentu
+/* IMPORT GENERAL
+============================================= */
+@import 'general';
+@import 'utils/variables';
+
+@import 'partials/header/header';
+@import 'partials/header/media/desktop';
+

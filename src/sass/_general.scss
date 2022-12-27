@@ -1,0 +1,48 @@
+/* 
+=====================================
+=====================================
+              GENERAL
+=====================================
+=====================================
+*/
+
+/* RESET
+============================================= */
+h1,
+h2,
+h6,
+ul,
+li,
+a,
+p,
+span {
+  padding: 0;
+  margin: 0;
+  user-select: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* BODY
+============================================= */
+body {
+  font-family: 'Titan One', 'DM Sans', sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* CONTAINER (CENTERING AND WIDTH)
+============================================= */
+.container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* SECTION (TOP AND BOTTOM PADDING)
+============================================= */
+.section {
+  padding: 60px 0;
+}
