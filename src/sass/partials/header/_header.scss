@@ -1,9 +1,100 @@
 .header {
+  position: relative;
+  overflow: hidden;
   background-color: getColor('pinky');
-  height: 665px;
+  height: 502px;
+  .container {
+    margin: 0 20px;
+  }
+  .section {
+    padding: 0 0;
+  }
 }
 
+/* TOP CONTAINER WITH LOGO AND BURGER */
 .header__top {
-    display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 6px;
 }
 
+.burger {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 20px;
+
+  &__button {
+    width: 20px;
+    height: 1px;
+    background-color: getColor('dark-pink');
+    &::after {
+      content: '';
+      bottom: 3px;
+      width: 20px;
+      height: 1px;
+      background-color: getColor('dark-pink');
+      position: absolute;
+    }
+    &::before {
+      content: '';
+      top: 3px;
+      width: 20px;
+      height: 1px;
+      background-color: getColor('dark-pink');
+      position: absolute;
+    }
+  }
+}
+/* CENTER CONTAINER WITH ICE AND GIRL */
+.header__center {
+  position: absolute;
+  bottom: 0;
+  height: 419px;
+
+  &--circle {
+    width: 345px;
+    height: 344px;
+    background-color: getColor('full-pinky');
+    border-radius: 50%;
+    position: absolute;
+  }
+  .ice__images {
+    position: absolute;
+    left: 81px;
+    bottom: -3px;
+  }
+}
+
+/* LEFT CONTAINER WITH TITLE */
+.header__left {
+  &--text {
+    width: 218px;
+    position: absolute;
+    left: 20px;
+    top: 193px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &--title {
+    font-family: Titan One;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #fff;
+    padding-bottom: 20px;
+    width: fit-content;
+  }
+  &--span {
+    font-family: Titan One;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 0.96;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d41443;
+  }
+}

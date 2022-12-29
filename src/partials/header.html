@@ -28,7 +28,7 @@
           />
         </picture>
       </div>
-      <nav class="top__navigation">
+      <nav class="top__navigation is-hidden">
         <ul class="navigation__list">
           <li class="navigation__item">Home</li>
           <li class="navigation__item">About us</li>
@@ -40,10 +40,47 @@
       <div class="burger">
         <div class="burger__button"></div>
       </div>
-      <button class="top__button">Buy now ></button>
+      <button class="top__button button is-hidden">Buy now ></button>
     </div>
-    <div class="header__right">
-      <div class="information">
+
+    <div class="header__center">
+      <div class="header__center--circle"></div>
+      <picture class="ice__images">
+        <!-- 1200px -->
+
+        <source
+          class="ice__image"
+          srcset="/images/desktop/header/ice.png 1x, ./images/desktop/header/ice-2x.png 2x"
+          media="(min-width: 1200px)"
+          width="199px"
+          height="50px"
+        />
+        <!-- 768px -->
+        <source
+          class="ice__image"
+          srcset="/images/tablet/header/ice.png 1x, ./images/tablet/header/ice-2x.png 2x"
+          media="(min-width: 768px)"
+          width="199px"
+          height="50px"
+        />
+        <!-- 320px -->
+        <img
+          class="ice__image"
+          srcset="./images/mobile/header/ice.png 1x, ./images/mobile/header/ice-2x.png 2x"
+          alt="image of Product Designer"
+          width="171px"
+        />
+      </picture>
+    </div>
+    <div class="header__left">
+      <div class="header__left--text">
+        <h1 class="header__left--title">
+          ice cream made with <span class="header__left--span">passion</span>
+        </h1>
+      </div>
+    </div>
+    <div class="header__right is-hidden">
+      <div class="hedaer__box--information">
         <div class="information__box">
           <div class="information__text">
             <span class="information__number">16</span>
