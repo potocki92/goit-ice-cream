@@ -10,6 +10,9 @@
 ============================================= */
 h1,
 h2,
+h3,
+h4,
+h5,
 h6,
 ul,
 li,
@@ -44,11 +47,18 @@ body::-webkit-scrollbar {
 /* SECTION (TOP AND BOTTOM PADDING)
 ============================================= */
 .section {
-  padding: 60px 0;
+  padding: 60px 20px;
 }
 
 /* HIDDING ELEMENT 
 ============================================= */
 .is-hidden {
-  display: none;
+  @include mobile {
+    display: none;
+  }
+  @include tablet {
+    &--tablet {
+      display: none;
+    }
+  }
 }

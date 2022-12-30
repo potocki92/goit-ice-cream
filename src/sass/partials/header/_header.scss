@@ -3,20 +3,60 @@
   overflow: hidden;
   background-color: getColor('pinky');
   height: 502px;
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 137px;
+    @include tablet {
+      gap: 15px;
+    }
+    @include desktop {
+      gap: 84px;
+    }
+  }
   .container {
-    margin: 0 20px;
+    @include tablet {
+      max-width: 768px;
+      margin: 0 auto;
+    }
+    @include desktop {
+      max-width: 1200px;
+    }
   }
   .section {
-    padding: 0 0;
+    padding: 0 20px;
+    @include tablet {
+      padding: 0 37px;
+    }
+    @include desktop {
+      padding: 0 46px;
+    }
+  }
+  @include tablet {
+    height: 399px;
+  }
+  @include tablet {
+    height: 665px;
   }
 }
 
 /* TOP CONTAINER WITH LOGO AND BURGER */
 .header__top {
+  /* if z-index is 2, and z-index in header__center is 1, then text is visible as first */
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 6px;
+
+  &--buttons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  @include tablet {
+    padding-top: 37px;
+  }
 }
 
 .burger {
@@ -46,12 +86,23 @@
       position: absolute;
     }
   }
+
+  @include desktop {
+    display: none;
+  }
 }
 /* CENTER CONTAINER WITH ICE AND GIRL */
 .header__center {
   position: absolute;
+  z-index: 1;
   bottom: 0;
   height: 419px;
+  @include tablet {
+    right: 461px;
+  }
+  @include desktop {
+    right: 730px;
+  }
 
   &--circle {
     width: 345px;
@@ -59,42 +110,194 @@
     background-color: getColor('full-pinky');
     border-radius: 50%;
     position: absolute;
+    @include tablet {
+      width: 324px;
+      height: 322px;
+      top: 51px;
+    }
+    @include desktop {
+      width: 538px;
+      height: 538px;
+      top: -195px;
+    }
   }
   .ice__images {
     position: absolute;
     left: 81px;
     bottom: -3px;
+    @include desktop {
+      left: 119px;
+    }
   }
 }
 
+.header__content {
+  /* if z-index is 2, and z-index in header__center is 1, then text is visible as first */
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+}
 /* LEFT CONTAINER WITH TITLE */
 .header__left {
-  &--text {
-    width: 218px;
-    position: absolute;
-    left: 20px;
-    top: 193px;
+  width: 162px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 19px;
+  &--show {
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
+    @include desktop {
+      gap: 25px;
+      padding-left: 69px;
+    }
   }
+
+  @include tablet {
+    gap: 20px;
+    &--hide {
+      display: flex;
+    }
+  }
+  @include desktop {
+    gap: 56px;
+    width: 311px;
+    &--hide {
+      padding-left: 31px;
+    }
+  }
+
   &--title {
-    font-family: Titan One;
     font-weight: 400;
     font-size: 26px;
     line-height: 1.15;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #fff;
-    padding-bottom: 20px;
-    width: fit-content;
+    @include tablet {
+      font-size: 22px;
+      line-height: 1.14;
+    }
+    @include desktop {
+      font-size: 38px;
+    }
   }
   &--span {
-    font-family: Titan One;
-    font-weight: 400;
     font-size: 48px;
     line-height: 0.96;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #d41443;
+    @include tablet {
+      font-size: 34px;
+      line-height: 0.91;
+    }
+    @include desktop {
+      font-size: 58px;
+    }
+  }
+
+  &--buttons {
+    display: flex;
+    gap: 8px;
+  }
+}
+
+.button {
+  border-radius: 20px;
+  border: none;
+  font-family: 'DM Sans';
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3;
+  padding: 10px 37.23px;
+
+  &--small {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    padding: 7px 14.5px;
+  }
+  &--red {
+    background-color: getColor('dark-pink');
+    color: getColor('semi-white');
+  }
+  &--white {
+    background-color: getColor('semi-white');
+    color: getColor('dark-pink');
+  }
+}
+.header__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 6px;
+  gap: 8px;
+}
+.header__paragraph {
+  height: 48px;
+  width: 114px;
+  font-family: 'DM Sans';
+  font-size: 8px;
+  line-height: 1.5;
+  color: getColor('semi-white');
+}
+
+.header__right {
+  &--hide {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .information__boxes {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    flex-direction: column;
+    gap: 13px;
+  }
+  .information__box {
+    position: relative;
+    .information__paragraph {
+      font-family: 'DM Sans';
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 1.25;
+      text-align: right;
+      color: getColor('semi-white');
+      width: 52px;
+      padding-right: 8px;
+
+      &::first-line {
+        font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 1.14;
+        letter-spacing: 0.04em;
+        margin-bottom: 13px;
+        color: getColor('dark-pink');
+      }
+    }
+    &::after {
+      content: '';
+      background-color: getColor('semi-white');
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      border-radius: 50%;
+      top: 0;
+      right: 0;
+      z-index: -1;
+    }
+  }
+  .girl__images {
+    position: absolute;
+    bottom: -3px;
+    right: 34px;
+    @include desktop {
+      right: 109px;
+    }
   }
 }

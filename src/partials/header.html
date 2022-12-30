@@ -1,46 +1,130 @@
 <section class="header">
   <div class="container section">
-    <div class="header__top">
-      <div class="hedaer__top__logo">
-        <picture class="logo__images">
-          <!-- 1200px -->
-          <source
-            class="logo__image"
-            srcset="/images/desktop/header/logo.png 1x, ./images/desktop/header/logo-2x.png 2x"
-            media="(min-width: 1200px)"
-            width="199px"
-            height="50px"
-          />
-          <!-- 768px -->
-          <source
-            class="logo__image"
-            srcset="/images/tablet/header/logo.png 1x, ./images/tablet/header/logo-2x.png 2x"
-            media="(min-width: 768px)"
-            width="199px"
-            height="50px"
-          />
-          <!-- 320px -->
-          <img
-            class="logo__image"
-            srcset="./images/mobile/header/logo.png 1x, ./images/mobile/header/logo-2x.png 2x"
-            alt="image of Product Designer"
-            width="100%"
-          />
-        </picture>
+    <div class="header__box">
+      <div class="header__top">
+        <div class="hedaer__top__logo">
+          <picture class="logo__images">
+            <!-- 1200px -->
+            <source
+              class="logo__image"
+              srcset="/images/desktop/header/logo.png 1x, ./images/desktop/header/logo-2x.png 2x"
+              media="(min-width: 1200px)"
+              width="199px"
+              height="50px"
+            />
+            <!-- 768px -->
+            <source
+              class="logo__image"
+              srcset="/images/tablet/header/logo.png 1x, ./images/tablet/header/logo-2x.png 2x"
+              media="(min-width: 768px)"
+              width="199px"
+              height="50px"
+            />
+            <!-- 320px -->
+            <img
+              class="logo__image"
+              srcset="./images/mobile/header/logo.png 1x, ./images/mobile/header/logo-2x.png 2x"
+              alt="image of Product Designer"
+              width="100%"
+            />
+          </picture>
+        </div>
+        <nav class="top__navigation is-hidden is-hidden--tablet">
+          <ul class="navigation__list">
+            <li class="navigation__item">Home</li>
+            <li class="navigation__item">About us</li>
+            <li class="navigation__item">How it's made?</li>
+            <li class="navigation__item">Our products</li>
+            <li class="navigation__item">Contacts</li>
+          </ul>
+        </nav>
+        <div class="header__top--buttons">
+          <div class="burger">
+            <div class="burger__button"></div>
+          </div>
+          <button class="top__button button button--white is-hidden">Buy now ></button>
+        </div>
       </div>
-      <nav class="top__navigation is-hidden">
-        <ul class="navigation__list">
-          <li class="navigation__item">Home</li>
-          <li class="navigation__item">About us</li>
-          <li class="navigation__item">How it's made?</li>
-          <li class="navigation__item">Our products</li>
-          <li class="navigation__item">Contacts</li>
-        </ul>
-      </nav>
-      <div class="burger">
-        <div class="burger__button"></div>
+
+      <div class="header__content">
+        <div class="header__left">
+          <div class="header__left--show">
+            <h1 class="header__left--title">
+              ice cream made with <span class="header__left--span">passion</span>
+            </h1>
+            <div class="header__left--buttons">
+              <button class="header__left--buttons button button--small button--red">
+                Products
+              </button>
+              <button class="header__left--buttons button button--small button--white">
+                How it's made?
+              </button>
+            </div>
+          </div>
+          <div class="header__left--hide is-hidden">
+            <picture class="milk__images">
+              <!-- 1200px -->
+              <source
+                class="milk__image"
+                srcset="/images/desktop/header/milk.png 1x, ./images/desktop/header/milk-2x.png 2x"
+                media="(min-width: 1200px)"
+                width="188px"
+                height="191px"
+              />
+              <!-- 768px -->
+              <img
+                class="milk__image"
+                srcset="/images/tablet/header/milk.png 1x, ./images/tablet/header/milk-2x.png 2x"
+                media="(min-width: 768px)"
+                width="124px"
+                height="126px"
+              />
+            </picture>
+            <div class="header__text">
+              <p class="header__paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et
+              </p>
+              <img
+              class="logo__image"
+              srcset="./images/general/arrow.png 1x, ./images/general/arrow-2x.png 2x"
+              alt="image of Product Designer"
+              width="18px"
+            />
+            </div>
+          </div>
+        </div>
+        <div class="header__right  is-hidden">
+          <div class="header__right--hide">
+            <div class="information__boxes">
+              <div class="information__box">
+                <p class="information__paragraph">16 cafes</p>
+              </div>
+              <div class="information__box">
+                <h3 class="information__paragraph">23 food trucks</p>
+              </div>
+            </div>
+            <picture class="girl__images">
+              <!-- 1200px -->
+              <source
+                class="girl__image"
+                srcset="/images/desktop/header/girl.png 1x, ./images/desktop/header/girl-2x.png 2x"
+                media="(min-width: 1200px)"
+                width="293px"
+                height="232px"
+              />
+              <!-- 768px -->
+              <img
+                class="girl__image"
+                srcset="/images/tablet/header/girl.png 1x, ./images/tablet/header/girl-2x.png 2x"
+                media="(min-width: 768px)"
+                width="168px"
+                height="133px"
+              />
+            </picture>
+          </div>
+        </div>
       </div>
-      <button class="top__button button is-hidden">Buy now ></button>
     </div>
 
     <div class="header__center">
@@ -52,16 +136,16 @@
           class="ice__image"
           srcset="/images/desktop/header/ice.png 1x, ./images/desktop/header/ice-2x.png 2x"
           media="(min-width: 1200px)"
-          width="199px"
-          height="50px"
+          width="236px"
+          height="557px"
         />
         <!-- 768px -->
         <source
           class="ice__image"
           srcset="/images/tablet/header/ice.png 1x, ./images/tablet/header/ice-2x.png 2x"
           media="(min-width: 768px)"
-          width="199px"
-          height="50px"
+          width="143px"
+          height="335px"
         />
         <!-- 320px -->
         <img
@@ -71,31 +155,6 @@
           width="171px"
         />
       </picture>
-    </div>
-    <div class="header__left">
-      <div class="header__left--text">
-        <h1 class="header__left--title">
-          ice cream made with <span class="header__left--span">passion</span>
-        </h1>
-      </div>
-    </div>
-    <div class="header__right is-hidden">
-      <div class="hedaer__box--information">
-        <div class="information__box">
-          <div class="information__text">
-            <span class="information__number">16</span>
-            <p class="information__paragraph">cafes</p>
-          </div>
-          <div class="information__circle"></div>
-        </div>
-        <div class="information__box">
-          <div class="information__text">
-            <span class="information__number">23</span>
-            <p class="information__paragraph">food trucks</p>
-          </div>
-          <div class="information__circle"></div>
-        </div>
-      </div>
     </div>
   </div>
 </section>

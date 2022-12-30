@@ -8,9 +8,9 @@
 
 /* IMPORT GENERAL
 ============================================= */
-@import 'general';
 @import 'utils/variables';
+@import 'utils/mixin';
+@import 'general';
 
 @import 'partials/header/header';
 @import 'partials/header/media/desktop';
-
