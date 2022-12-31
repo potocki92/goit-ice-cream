@@ -3,4 +3,32 @@
   .section {
     padding: 125px 20px 145px;
   }
+
+  &__how {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 46px;
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 0 30px;
+
+    &--text {
+      font-family: 'DM Sans';
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.62;
+      color: getColor('grey-text');
+    }
+    &--text:first-child {
+      color: getColor('black');
+    }
+  }
 }

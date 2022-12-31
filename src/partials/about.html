@@ -1,8 +1,52 @@
 <section class="about">
-    <div class="container section">
-        <div class="title">
-            <h3 class="title--small">TRADITIONAL AND LOVE</h3>
-            <h2 class="title--big">HOW IT'S MADE?</h2>
+  <div class="container section">
+    <div class="about__how">
+      <div class="title">
+        <h3 class="title--small">TRADITIONAL AND LOVE</h3>
+        <h2 class="title--big">HOW IT'S MADE?</h2>
+      </div>
+      <div class="about__how__content">
+        <picture class="about__images">
+          <!-- 1200px -->
+          <source
+            class="about__image"
+            srcset="/images/desktop/about/cow.png 1x, ./images/desktop/about/cow-2x.png 2x"
+            media="(min-width: 1200px)"
+            width="516px"
+            height="516px"
+          />
+          <!-- 768px -->
+          <source
+            class="about__image"
+            srcset="/images/tablet/about/cow.png 1x, ./images/tablet/about/cow-2x.png 2x"
+            media="(min-width: 768px)"
+            width="340px"
+            height="339px"
+          />
+          <!-- 320px -->
+          <img
+            class="about__image"
+            srcset="./images/mobile/about/cow.png 1x, ./images/mobile/about/cow-2x.png 2x"
+            alt="image of cow"
+            width="280px"
+          />
+        </picture>
+        <div class="about__info">
+          <p class="about__info--text">
+            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+            lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+          </p>
+          <p class="about__info--text">
+            Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus
+            orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat
+            urna maximus. Cras massa nibh, tincidunt. </br></br> Aliquam erat volutpat. Aenean accumsan.
+          </p>
+          <div class="buttons">
+              <button class="about__button button button--white">Read more ></button>
+            </div>
         </div>
+      </div>
     </div>
+    <div class="about__adventages"></div>
+  </div>
 </section>
