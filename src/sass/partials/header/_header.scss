@@ -58,6 +58,16 @@
   @include tablet {
     padding-top: 37px;
   }
+  &--navigation {
+    .navigation__list {
+      display: flex;
+      gap: 35px;
+
+      font-family: 'DM Sans';
+      font-weight: 700;
+      color: getColor('semi-white');
+    }
+  }
 }
 
 .burger {
@@ -114,19 +124,23 @@
     @include tablet {
       width: 324px;
       height: 322px;
-      top: 51px;
+      top: 70px;
     }
     @include desktop {
       width: 538px;
       height: 538px;
-      top: -195px;
+      top: -155px;
     }
   }
   .ice__images {
     position: absolute;
     left: 81px;
     bottom: -3px;
+    @include tablet {
+      bottom: -20px;
+    }
     @include desktop {
+      bottom: -45px;
       left: 119px;
     }
   }
@@ -201,6 +215,9 @@
   &--buttons {
     display: flex;
     gap: 8px;
+    @include desktop {
+      gap: 15px;
+    }
   }
 }
 
@@ -222,7 +239,7 @@
     @include desktop {
       font-size: 14px;
       line-height: 1.28;
-      padding: 8px 17px;
+      padding: 8px 19px;
     }
   }
   &--red {
@@ -240,6 +257,9 @@
   justify-content: flex-end;
   padding-bottom: 6px;
   gap: 8px;
+  @include desktop {
+    gap: 20px;
+  }
 }
 .header__paragraph {
   height: 48px;
@@ -248,6 +268,12 @@
   font-size: 8px;
   line-height: 1.5;
   color: getColor('semi-white');
+  @include desktop {
+    width: 200px;
+    height: 78px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
 }
 
 .header__right {
@@ -262,6 +288,9 @@
     align-content: flex-end;
     flex-direction: column;
     gap: 13px;
+    @include desktop {
+      gap: 15px;
+    }
   }
   .information__box {
     position: relative;
@@ -272,8 +301,12 @@
       line-height: 1.25;
       text-align: right;
       color: getColor('semi-white');
-      width: 52px;
+      width: 92px;
       padding-right: 8px;
+      @include desktop {
+        font-size: 14px;
+        padding-right: 18px;
+      }
 
       &::first-line {
         font-family: 'Titan One';
@@ -284,6 +317,9 @@
         letter-spacing: 0.04em;
         margin-bottom: 13px;
         color: getColor('dark-pink');
+        @include desktop {
+          font-size: 46px;
+        }
       }
     }
     &::after {
@@ -296,14 +332,18 @@
       top: 0;
       right: 0;
       z-index: -1;
+      @include desktop {
+        width: 30px;
+        height: 30px;
+      }
     }
   }
   .girl__images {
     position: absolute;
-    bottom: -3px;
+    bottom: -20px;
     right: 34px;
     @include desktop {
-      right: 109px;
+      bottom: -45px;
     }
   }
 }

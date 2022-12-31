@@ -61,4 +61,28 @@ body::-webkit-scrollbar {
       display: none;
     }
   }
+  @include desktop {
+    display: flex;
+  }
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  
+  text-align: center;
+  &--small {
+    color: getColor('full-pinky');
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.16;
+  }
+  &--big {
+    color: getColor('dark-pink');
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+  }
 }

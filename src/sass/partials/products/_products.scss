@@ -1,0 +1,86 @@
+.products {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 144px;
+  }
+  .section {
+    padding: 121px 20px 98px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 130px;
+  }
+  &__item {
+    
+    width: 280px;
+    height: 485px;
+    border-radius: 24px;
+    &--pink {
+        background-color: getColor('medium-pinky');
+    }
+    &--coffee {
+        background-color: getColor('coffee');
+    }
+    &--green {
+        background-color: getColor('green');
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    color: getColor('semi-white');
+    
+    font-family: 'Titan One';
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    &--text {
+      width: 200px;
+      height: 124px;
+      font-family: 'DM Sans';
+      font-size: 14px;
+      line-height: 1.52;
+    }
+    &--circle {
+        .circle {
+            position: relative;
+            width: 6px;
+            height: 6px;
+            background-color: getColor('semi-white');
+            border-radius: 50%;
+            &::after {
+                position: absolute;
+                content: '';
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                left: -10px;
+                background-color: getColor('semi-white');
+            }
+            &::before {
+                position: absolute;
+                content: '';
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                right: -10px;
+                background-color: getColor('semi-white');
+            }
+        }
+    }
+  }
+  .content__move {
+    margin-top: -128px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+  }
+}
