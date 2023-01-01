@@ -108,10 +108,14 @@
   z-index: 1;
   bottom: 0;
   height: 419px;
+  padding-left: 15px;
+
   @include tablet {
+    padding-left: 0;
     right: 461px;
   }
   @include desktop {
+    padding-left: 0;
     right: 730px;
   }
 
@@ -134,14 +138,14 @@
   }
   .ice__images {
     position: absolute;
-    left: 81px;
+    left: 50%;
+    transform: translate(50%, 0);
     bottom: -3px;
     @include tablet {
       bottom: -20px;
     }
     @include desktop {
       bottom: -45px;
-      left: 119px;
     }
   }
 }
