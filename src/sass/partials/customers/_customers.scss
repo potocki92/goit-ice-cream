@@ -1,0 +1,31 @@
+.customer {
+  .section {
+    padding: 154px 20px 170px 20px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 29px;
+  }
+  .customer__content {
+    .customer__box {
+      background-color: getColor('customer-grey');
+      height: 308px;
+      width: 100%;
+      padding: 43px 65px 20px 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .customer__text {
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 2.55;
+      text-align: center;
+      border-bottom: 1px solid getColor('grey-accent');
+    }
+  }
+}
