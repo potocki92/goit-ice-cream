@@ -1,0 +1,77 @@
+.footer {
+  background-color: getColor('light-pink');
+  .section {
+    padding: 113px 20px 43px 20px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+  }
+  .footer__text {
+    width: 232px;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+  }
+  &__span {
+    font-size: 18px;
+    line-height: 1.16;
+    color: getColor('footer-pink');
+    &--big {
+      font-weight: 400;
+      font-size: 34px;
+      line-height: 39px;
+      letter-spacing: 0.04em;
+      color: getColor('dark-pink');
+    }
+  }
+  &__socials {
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+  }
+  &__icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 28.24px;
+  }
+  &__svg {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: getColor('footer-pink');
+    border-radius: 50%;
+  }
+  &__phone {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.86;
+    text-align: right;
+    &--link {
+      color: getColor('dark-pink');
+    }
+  }
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 89px;
+    border-top: 1px solid getColor('grey-accent');
+    &--span {
+      display: block;
+      width: 148px;
+      text-align: center;
+      font-family: 'DM Sans';
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.52;
+      color: getColor('grey-text');
+    }
+  }
+}

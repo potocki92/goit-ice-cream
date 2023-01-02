@@ -48,7 +48,9 @@
       letter-spacing: 0.04em;
       padding: 0px 24px;
       border-radius: 4px;
-      background-color: getColor('coffee');
+      &--coffee {
+        background-color: getColor('coffee');
+      }
       &--green {
         background-color: getColor('green');
       }
