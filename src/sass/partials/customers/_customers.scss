@@ -11,21 +11,45 @@
   .customer__content {
     .customer__box {
       background-color: getColor('customer-grey');
-      height: 308px;
       width: 100%;
       padding: 43px 65px 20px 60px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      text-align: center;
+    }
+    .underline__block {
+      background-image: linear-gradient(
+        transparent,
+        transparent calc(3ch - 1px),
+        getColor('grey-accent') 0px
+      );
+      background-size: 100% 3ch;
+      line-height: 3ch;
     }
     .customer__text {
+      position: relative;
       font-family: 'DM Sans';
+      text-align: center;
       font-style: normal;
       font-weight: 500;
       font-size: 12px;
       line-height: 2.55;
-      text-align: center;
-      border-bottom: 1px solid getColor('grey-accent');
+      z-index: 1;
+    }
+  }
+  &__svg {
+    position: absolute;
+    fill: getColor('grey-accent');
+    top: -27px;
+    left: -25px;
+    z-index: -1;
+  }
+  &__circle {
+    display: flex;
+    justify-content: center;
+    .circle {
+      width:4px;
+      height: 4px;
+      background-color: getColor('circle-color');
+      border-radius: 50%;
     }
   }
 }
