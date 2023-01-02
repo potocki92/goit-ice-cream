@@ -70,13 +70,18 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  
+
   text-align: center;
   &--small {
     color: getColor('full-pinky');
     font-weight: 400;
     font-size: 18px;
     line-height: 1.16;
+    @include desktop {
+      font-size: 30px;
+      line-height: 1.13;
+      letter-spacing: 0.04em;
+    }
   }
   &--big {
     color: getColor('dark-pink');
@@ -84,5 +89,10 @@ body::-webkit-scrollbar {
     font-size: 34px;
     line-height: 1.15;
     letter-spacing: 0.04em;
+    @include desktop {
+      font-size: 58px;
+      line-height: 1.14;
+      letter-spacing: 0.06em;
+    }
   }
 }
