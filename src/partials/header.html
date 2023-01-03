@@ -4,46 +4,59 @@
       <div class="header__top">
         <div class="header__top__logo">
           <a class="navigation__link" href="index.html">
-          <picture class="logo__images">
-            <!-- 1280px -->
-            <source
-              class="logo__image"
-              srcset="/images/desktop/header/logo.png 1x, ./images/desktop/header/logo-2x.png 2x"
-              media="(min-width: 1280px)"
-              width="199px"
-              height="50px"
-            />
-            <!-- 768px -->
-            <source
-              class="logo__image"
-              srcset="/images/tablet/header/logo.png 1x, ./images/tablet/header/logo-2x.png 2x"
-              media="(min-width: 768px)"
-              width="199px"
-              height="50px"
-            />
-            <!-- 320px -->
-            <img
-              class="logo__image"
-              srcset="./images/mobile/header/logo.png 1x, ./images/mobile/header/logo-2x.png 2x"
-              alt="image of Product Designer"
-              width="100%"
-            />
-          </picture></a>
+            <picture class="logo__images">
+              <!-- 1280px -->
+              <source
+                class="logo__image"
+                srcset="/images/desktop/header/logo.png 1x, ./images/desktop/header/logo-2x.png 2x"
+                media="(min-width: 1280px)"
+                width="199px"
+                height="50px"
+              />
+              <!-- 768px -->
+              <source
+                class="logo__image"
+                srcset="/images/tablet/header/logo.png 1x, ./images/tablet/header/logo-2x.png 2x"
+                media="(min-width: 768px)"
+                width="199px"
+                height="50px"
+              />
+              <!-- 320px -->
+              <img
+                class="logo__image"
+                srcset="./images/mobile/header/logo.png 1x, ./images/mobile/header/logo-2x.png 2x"
+                alt="image of Product Designer"
+                width="100%"
+              /> </picture
+          ></a>
         </div>
         <nav class="header__top--navigation is-hidden is-hidden--tablet">
           <ul class="navigation__list">
             <li class="navigation__item"><a class="navigation__link" href="index.html">Home</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="#customer">About us</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="#about">How it's made?</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="#products">Our products</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="#contacts">Contacts</a></li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#customer">About us</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#about">How it's made?</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#products">Our products</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#contacts">Contacts</a>
+            </li>
           </ul>
         </nav>
         <div class="header__top--buttons">
           <div class="burger">
             <div class="burger__button"></div>
           </div>
-          <button class="top__button button button--white is-hidden">Buy now ></button>
+          <button class="top__button button button--white is-hidden">
+            Buy now
+            <svg width="8" height="10px">
+              <use class="button__icon" xlink:href="./images/svg/icons.svg#icon-arrow"></use>
+            </svg>
+          </button>
         </div>
       </div>
 
@@ -87,32 +100,37 @@
                 incididunt ut labore et
               </p>
               <picture class="arrow__images">
-
                 <source
-                class="arrow__image"
-                srcset="./images/general/arrow.png 1x, ./images/general/arrow-2x.png 2x"
-                media="(min-width: 1280px)"
-                width="26px"
-                height="26px"
+                  class="arrow__image"
+                  srcset="
+                    ./images/desktop/header/arrow.png    1x,
+                    ./images/desktop/header/arrow-2x.png 2x
+                  "
+                  media="(min-width: 1280px)"
+                  width="26px"
+                  height="26px"
                 />
                 <img
-                class="arrow__image"
-                srcset="./images/general/arrow.png 1x, ./images/general/arrow-2x.png 2x"
-                alt="image of arrow"
-                width="18px"
+                  class="arrow__image"
+                  srcset="
+                    ./images/tablet/header/arrow.png    1x,
+                    ./images/tablet/header/arrow-2x.png 2x
+                  "
+                  alt="image of arrow"
+                  width="18px"
                 />
               </picture>
             </div>
           </div>
         </div>
-        <div class="header__right  is-hidden">
+        <div class="header__right is-hidden">
           <div class="header__right--hide">
             <div class="information__boxes">
               <div class="information__box">
                 <p class="information__paragraph">16 cafes</p>
               </div>
               <div class="information__box">
-                <h3 class="information__paragraph">23 food trucks</p>
+                <p class="information__paragraph">23 food trucks</p>
               </div>
             </div>
             <picture class="girl__images">

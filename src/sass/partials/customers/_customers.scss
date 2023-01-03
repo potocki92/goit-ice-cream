@@ -81,6 +81,7 @@
       height: 4px;
       background-color: getColor('circle-color');
       border-radius: 50%;
+
       &::after {
         content: '';
         left: 10px;
@@ -127,18 +128,23 @@
       height: 12px;
       background-color: getColor('home-grey');
       border-radius: 50%;
-      &::after {
+      cursor: pointer;
+      &:hover {
+        background-color: getColor('dark-pink');
+      }
+
+      &::before {
         content: '';
-        left: 28px;
+        right: 28px;
         position: absolute;
         width: 12px;
         height: 12px;
         background-color: getColor('home-grey');
         border-radius: 50%;
       }
-      &::before {
+      &::after {
         content: '';
-        right: 28px;
+        left: 28px;
         position: absolute;
         width: 12px;
         height: 12px;

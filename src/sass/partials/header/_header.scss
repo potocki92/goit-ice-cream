@@ -58,6 +58,9 @@
   @include tablet {
     padding-top: 37px;
   }
+  @include desktop {
+    padding-right: 18px;
+  }
   &--navigation {
     .navigation__list {
       display: flex;
