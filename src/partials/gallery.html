@@ -1,0 +1,27 @@
+<div class="gallery">
+  <picture class="gallery__images">
+    <!-- 1200px -->
+    <source
+      class="gallery__image"
+      srcset="/images/desktop/gallery/gallery.png 1x, ./images/desktop/gallery/gallery-2x.png 2x"
+      media="(min-width: 1280px)"
+      width="1280px"
+      height="430px"
+    />
+    <!-- 768px -->
+    <source
+      class="gallery__image"
+      srcset="/images/tablet/gallery/gallery.png 1x, ./images/tablet/gallery/gallery-2x.png 2x"
+      media="(min-width: 768px)"
+      width="786px"
+      height="264px"
+    />
+    <!-- 320px -->
+    <img
+      class="gallery__image"
+      srcset="./images/mobile/gallery/gallery.png 1x, ./images/mobile/gallery/gallery-2x.png 2x"
+      alt="image of gallery"
+      width="100%"
+    />
+  </picture>
+</div>

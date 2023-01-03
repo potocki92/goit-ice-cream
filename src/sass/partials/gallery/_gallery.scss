@@ -1,0 +1,11 @@
+
+.gallery__images {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  .gallery__image {
+    @include tablet {
+      margin-top: -105px;
+    }
+  }
+}

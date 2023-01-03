@@ -3,6 +3,9 @@
     display: flex;
     flex-direction: column;
     gap: 144px;
+    @include tablet {
+      gap: 150px;
+    }
     @include desktop {
       gap: 259px;
     }
@@ -25,6 +28,9 @@
     @include tablet {
       flex-direction: row;
       gap: 20px;
+    }
+    @include desktop {
+      gap: 30px;
     }
   }
   &__item {
@@ -69,8 +75,6 @@
     letter-spacing: 0.04em;
 
     &--title {
-      letter-spacing: 0.04em;
-      line-height: 1.15;
       @include desktop {
         font-size: 30px;
         line-height: 1.13;
@@ -85,6 +89,7 @@
       @include tablet {
         width: 180px;
         line-height: 1.76;
+        letter-spacing: 0.04em;
         overflow: hidden;
       }
       @include desktop {
