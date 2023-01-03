@@ -8,9 +8,7 @@
 
 /* RESET
 ============================================= */
-html {
-  scroll-behavior: smooth;
-}
+
 h1,
 h2,
 h3,
@@ -27,6 +25,12 @@ span {
   user-select: none;
   list-style: none;
   text-decoration: none;
+}
+
+/* SMOOTH SCROLL BETWEEN SECTIONS
+============================================= */
+html {
+  scroll-behavior: smooth;
 }
 
 /* BODY
@@ -113,4 +117,3 @@ body::-webkit-scrollbar {
     }
   }
 }
-
