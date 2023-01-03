@@ -13,6 +13,9 @@
     align-items: center;
     justify-content: center;
     gap: 54px;
+    @include desktop {
+      gap: 86px;
+    }
   }
   &__list {
     display: flex;
@@ -23,6 +26,9 @@
     margin-top: -84px;
     @include tablet {
       flex-direction: row;
+    }
+    @include desktop {
+      margin-top: -102px;
     }
   }
   &__item {
@@ -41,6 +47,11 @@
       padding: 50px 31px;
       gap: 30px;
     }
+    @include desktop {
+      width: 330px;
+      height: 572px;
+      gap: 32px;
+    }
     &--content {
       display: flex;
       flex-direction: column;
@@ -51,6 +62,13 @@
         gap: 14px;
         &--box:last-child {
           padding-top: 2px;
+        }
+      }
+      @include desktop {
+        gap: 10px;
+        padding-bottom: 30px;
+        &--box:last-child {
+          padding-top: 5px;
         }
       }
       &:last-child {
@@ -74,7 +92,7 @@
       }
       @include tablet {
         font-size: 16px;
-        padding: 0 15px;
+        padding: 3.5px 15px;
       }
     }
     &--city {
@@ -85,6 +103,9 @@
       letter-spacing: 0.04em;
       @include tablet {
         font-size: 14px;
+      }
+      @include desktop {
+        font-size: 16px;
       }
     }
     &--description {
@@ -107,6 +128,9 @@
       @include tablet {
         font-size: 14px;
       }
+      @include desktop {
+        font-size: 16px;
+      }
     }
     &--time {
       font-family: 'DM Sans';
@@ -119,6 +143,9 @@
         font-size: 14px;
         line-height: 1.86;
       }
+      @include desktop {
+        font-size: 16px;
+      }
     }
     &--link {
       font-family: 'DM Sans';
@@ -129,6 +156,9 @@
       color: getColor('grey-text');
       @include tablet {
         font-size: 14px;
+      }
+      @include desktop {
+        font-size: 16px;
       }
     }
   }
@@ -149,6 +179,9 @@
       text-align: center;
       @include tablet {
         width: 191px;
+      }
+      @include desktop {
+        width: 198px;
       }
     }
   }

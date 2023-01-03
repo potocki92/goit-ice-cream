@@ -5,6 +5,9 @@
     @include tablet {
       padding: 130px 39px 246px 36px;
     }
+    @include desktop {
+      padding: 125px 112px 310px;
+    }
   }
   .container {
     display: flex;
@@ -22,6 +25,9 @@
     @include tablet {
       gap: 50px;
     }
+    @include desktop {
+      gap: 55px;
+    }
     &__content {
       display: grid;
       flex-direction: column;
@@ -31,6 +37,9 @@
         gap: 62px;
         grid-column-gap: 17px;
       }
+      @include desktop {
+        grid-column-gap: 74px;
+      }
       .buttons {
         grid-column-start: 1;
         grid-template-columns: 176px;
@@ -38,6 +47,12 @@
         @include tablet {
           grid-column-start: 2;
           padding: 0;
+        }
+        @include desktop {
+          grid-row-start: 1;
+          align-items: center;
+          display: grid;
+          padding-top: 274px;
         }
       }
     }
@@ -53,6 +68,11 @@
       justify-content: flex-end;
       padding: 0;
     }
+    @include desktop {
+      grid-row-start: 1;
+      justify-content: flex-start;
+      padding-top: 51px;
+    }
     &--text {
       font-family: 'DM Sans';
       font-weight: 500;
@@ -65,10 +85,17 @@
         line-height: 1.76;
         letter-spacing: 0.04em;
       }
+
+      @include desktop {
+        line-height: 1.94;
+      }
     }
     &--text:first-child {
       color: getColor('black');
       letter-spacing: 0em;
+      @include desktop {
+        font-size: 16px;
+      }
     }
   }
 
@@ -81,6 +108,9 @@
         flex-direction: row;
         gap: 60px;
       }
+      @include desktop {
+        gap: 30px;
+      }
     }
     .adventages__item {
       display: flex;
@@ -88,6 +118,9 @@
       gap: 16px;
       @include tablet {
         gap: 13px;
+      }
+      @include desktop {
+        gap: 15px;
       }
     }
     .adventages__title {
@@ -101,6 +134,11 @@
         padding-top: 23px;
         line-height: 1.145;
       }
+      @include desktop {
+        font-size: 58px;
+        line-height: 1.14;
+        padding-top: 25px;
+      }
     }
     .adventages__text {
       width: 230px;
@@ -111,6 +149,12 @@
       @include tablet {
         width: 180px;
         font-size: 14px;
+      }
+      @include desktop {
+        width: 330px;
+        font-size: 16px;
+        line-height: 1.76;
+        letter-spacing: 0.02em;
       }
     }
   }
