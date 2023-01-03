@@ -81,7 +81,8 @@
       gap: 25px;
     }
   }
-  &__svg {
+  .footer__svg {
+    cursor: pointer;
     width: 32px;
     height: 32px;
     display: flex;
@@ -89,6 +90,11 @@
     align-items: center;
     background-color: getColor('footer-pink');
     border-radius: 50%;
+    transition: background-color 0.2s;
+    &:hover {
+      background-color: getColor('dark-pink');
+      transition: background-color 0.2s;
+    }
   }
   &__phone {
     font-family: 'DM Sans';

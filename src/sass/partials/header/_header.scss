@@ -65,43 +65,19 @@
 
       font-family: 'DM Sans';
       font-weight: 700;
+    }
+    .navigation__link {
       color: getColor('semi-white');
+      cursor: pointer;
+      transition: color 0.2s;
+      &:hover {
+        color: getColor('circle-color');
+        transition: color 0.2s;
+      }
     }
   }
 }
 
-.burger {
-  position: relative;
-  display: flex;
-  align-items: center;
-  height: 20px;
-
-  &__button {
-    width: 20px;
-    height: 1px;
-    background-color: getColor('dark-pink');
-    &::after {
-      content: '';
-      bottom: 3px;
-      width: 20px;
-      height: 1px;
-      background-color: getColor('dark-pink');
-      position: absolute;
-    }
-    &::before {
-      content: '';
-      top: 3px;
-      width: 20px;
-      height: 1px;
-      background-color: getColor('dark-pink');
-      position: absolute;
-    }
-  }
-
-  @include desktop {
-    display: none;
-  }
-}
 /* CENTER CONTAINER WITH ICE AND GIRL */
 .header__center {
   position: absolute;

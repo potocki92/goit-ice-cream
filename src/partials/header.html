@@ -3,6 +3,7 @@
     <div class="header__box">
       <div class="header__top">
         <div class="header__top__logo">
+          <a class="navigation__link" href="index.html">
           <picture class="logo__images">
             <!-- 1280px -->
             <source
@@ -27,15 +28,15 @@
               alt="image of Product Designer"
               width="100%"
             />
-          </picture>
+          </picture></a>
         </div>
         <nav class="header__top--navigation is-hidden is-hidden--tablet">
           <ul class="navigation__list">
-            <li class="navigation__item">Home</li>
-            <li class="navigation__item">About us</li>
-            <li class="navigation__item">How it's made?</li>
-            <li class="navigation__item">Our products</li>
-            <li class="navigation__item">Contacts</li>
+            <li class="navigation__item"><a class="navigation__link" href="index.html">Home</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#customer">About us</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#about">How it's made?</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#products">Our products</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#contacts">Contacts</a></li>
           </ul>
         </nav>
         <div class="header__top--buttons">
@@ -85,12 +86,22 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et
               </p>
-              <img
-              class="logo__image"
-              srcset="./images/general/arrow.png 1x, ./images/general/arrow-2x.png 2x"
-              alt="image of arrow"
-              width="18px"
-            />
+              <picture class="arrow__images">
+
+                <source
+                class="arrow__image"
+                srcset="./images/general/arrow.png 1x, ./images/general/arrow-2x.png 2x"
+                media="(min-width: 1280px)"
+                width="26px"
+                height="26px"
+                />
+                <img
+                class="arrow__image"
+                srcset="./images/general/arrow.png 1x, ./images/general/arrow-2x.png 2x"
+                alt="image of arrow"
+                width="18px"
+                />
+              </picture>
             </div>
           </div>
         </div>
